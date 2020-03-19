@@ -1,0 +1,3 @@
+[submodule "idna"]
+	path = idna
+	url = https://git.sailfishos.org/mirror/idna.git
