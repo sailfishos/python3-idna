@@ -7,6 +7,7 @@ URL:        https://pypi.org/project/idna/
 BuildArch:  noarch
 Source0:    %{name}-%{version}.tar.bz2
 Requires:   python3-base
+BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 
 %description
