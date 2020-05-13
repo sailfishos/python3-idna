@@ -1,6 +1,3 @@
-# fixme: should be defined in base system side
-%define python3_sitearch %(%{__python3} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1))")
-
 Name:       python3-idna
 Summary:    Internationalized Domain Names in Applications
 Version:    2.9
@@ -23,11 +20,11 @@ This acts as a suitable replacement for the “encodings.idna” module that com
 %setup -q -n %{name}-%{version}/idna
 
 %build
-python3 ./setup.py build
+%{py3_build}
 
 %install
 rm -rf %{buildroot}
-python3 ./setup.py install --skip-build --root %{buildroot}
+%{py3_install}
 
 %files
 %defattr(-,root,root,-)
