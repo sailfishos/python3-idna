@@ -29,5 +29,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{python3_sitearch}/idna
-%{python3_sitearch}/idna-*.egg-info
+%{python3_sitelib}/idna
+%{python3_sitelib}/idna-*.egg-info
