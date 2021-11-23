@@ -29,5 +29,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
+%license LICENSE.rst
 %{python3_sitelib}/idna
 %{python3_sitelib}/idna-*.egg-info
